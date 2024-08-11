@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the contact page -->
+    <title>Contact - My Portfolio</title>
+    <!-- Links to external stylesheets for the contact page and general styles -->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar section -->
+    <nav>
+        <div class="navbar">
+            <!-- Logo linking to the home page -->
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <!-- Navigation menu with links to various sections of the portfolio -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Placeholder for social media icons or other media links -->
+            <div class="media-icons">
+            </div>
+            <!-- Mobile menu button (hamburger icon) -->
+            <div class="menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Contact section containing details and a contact form -->
+    <section class="contact">
+        <div class="content">
+            <!-- Title of the contact section -->
+            <div class="title">
+                <span>Contact Me</span>
+            </div>
+            <div class="contact-details">
+                <!-- Left section with contact information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>
+                        If you have any questions, want to discuss a project, or just want to say hello, feel free to reach out!
+                    </p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                        <li><strong>Phone:</strong> +123 456 7890</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </div>
+                <!-- Right section with a contact form -->
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="submit_form.php" method="POST">
+                        <!-- Input fields for name, email, and message -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <!-- Submit button to send the form -->
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="text">
+            <!-- Footer text with copyright and a link to the contact page -->
+            <span>&copy; 2024 MyPortfolio. All rights reserved.</span>
+            <span> | </span>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for the contact page -->
+    <script src="js/contact.js"></script>
+    <!-- External JavaScript file for general page functionality -->
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to change the navigation bar's color when the user scrolls down
+        window.addEventListener('scroll', function() {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 50) {
+            nav.classList.add('sticky');
+          } else {
+            nav.classList.remove('sticky');
+          }
+        });
+    </script>
+</body>
+</html>

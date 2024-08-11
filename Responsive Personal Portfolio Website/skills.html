@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
+    <title>Skills - My Portfolio</title>
+    
+    <!-- Link to external stylesheets -->
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation section -->
+    <nav>
+        <div class="navbar">
+            <!-- Logo section -->
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            
+            <!-- Menu section -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Placeholder for media icons or links -->
+            <div class="media-icons">
+                <!-- Social Media Icons or other media links -->
+            </div>
+            
+            <!-- Menu button for mobile view -->
+            <div class="menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <!-- Section title -->
+            <div class="title">
+                <h1>My Skills</h1>
+            </div>
+            
+            <!-- Details about skills and experience -->
+            <div class="skills-details">
+                <!-- Brief text about skills -->
+                <div class="text">
+                    <p>
+                        I have developed a diverse set of skills over the years. My expertise spans various areas, enabling me to tackle a wide range of projects. Below, you can find a brief overview of my primary skills and areas of experience.
+                    </p>
+                </div>
+                
+                <!-- Years of experience section -->
+                <div class="experience">
+                    <div class="num">5+</div>
+                    <div class="exp">Years of Experience</div>
+                </div>
+                
+                <!-- Skills and proficiency percentages -->
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic">Web Development</div>
+                        <div class="per">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">UI/UX Design</div>
+                        <div class="per">85%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">JavaScript</div>
+                        <div class="per">80%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">React</div>
+                        <div class="per">75%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Python</div>
+                        <div class="per">70%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Machine Learning</div>
+                        <div class="per">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="text">
+            <span>&copy; 2024 MyPortfolio. All rights reserved.</span>
+            <span> | </span>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for navigation bar behavior on scroll -->
+    <script src="script.js"></script>
+    <script>
+        // Change the navigation bar color when scrolling down
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
